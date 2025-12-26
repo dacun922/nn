@@ -144,9 +144,9 @@ class VideoProcessor:
         frame_idx = 0
         
         print("=" * 50)
-        print("车道线检测（分屏版-最终优化）")
+        print("车道线检测（分屏版-最终版）")
         print("=" * 50)
-        print("操作：空格=单步 P=暂停/继续 Q=退出")
+        print("操作：空格单步 P=暂停/继续 Q=退出")
         print(f"适配帧率：{fps} FPS | 最大处理帧数：{max_frames}")
         print("=" * 50)
         
@@ -201,7 +201,7 @@ class VideoProcessor:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="车道线检测（分屏版-最终优化）")
+    parser = argparse.ArgumentParser(description="车道线检测（分屏版-最终版）")
     parser.add_argument("video_path", type=str, help="视频路径（如：road_video_fixed.mp4）")
     args = parser.parse_args()
     
